@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Girilen n sayısına kadar olan doğal sayların toplamı</title>
+    <meta charset="Utf-8">
+    <style>
+        <!--Buraya css yazılır ekran görüntüsünü düzeltmek ve iyleştirmek için-->
+    </style>
+</head>
+<center>
+<body>
+    <input type="text" id="sayı" placeholder="Bir doğal sayı girin"><br>
+    <input type="button" id="hesapla" value="Hesapla"><br>
+    <div id="anan"></div>
+
+    <script>
+        var sayı1=document.getElementById("sayı");
+
+        var hesaplabtn=document.getElementById("hesapla");
+
+        hesaplabtn.onclick = function(){
+
+            var sayı2=Number(sayı1.value);
+
+            var sonuc=0; 
+            for(var i=1;i<=sayı2;i++)
+			    {
+				    sonuc=sonuc+i;
+			    }
+           
+            document.getElementById("anan").innerHTML="Girilen sayıya kadar olan doğal sayılar:"+sonuc;
+            }
+
+
+
+    </script>
+</body>
+</center>
+</html>

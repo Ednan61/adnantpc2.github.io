@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hesap makinesi</title>
+    <meta charset="Utf-8">
+</head>
+
+<center>
+<body>
+    <input type="text" id="kısakenar"  placeholder="kısa kenarı giriniz" ><br>
+    <input type="text" id="uzunkenar"  placeholder="Uzun kenarı giriniz" ><br>
+    <input type="button" value="Hesapla" id="hesapla"><br>
+    <script>
+        function hesapla(){
+            var kk=document.getElementById("kısakenar").value;
+            var uk=document.getElementById("uzunkenar").value;
+
+            var alan=Number(kk*uk);
+            var çevre=Number(kk*2+uk*2);
+        
+                  window.alert("Çevre:"+çevre+ "\n  Alan:" +alan);
+       }
+            var  hesapBtn=document.getElementById("hesapla");
+
+                 hesapBtn.onclick=hesapla;
+
+    </script>
+
+
+
+</body>
+</center>
+</html>

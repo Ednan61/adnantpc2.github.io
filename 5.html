@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faktöriyel hesaplama</title>
+    <meta charset="Utf-8">
+</head>
+<center>
+<body>
+    <p>Bir doğal sayı girin</p>
+    <input type="text" id="sayı" placeholder="Bir doğal sayı girin"><br>
+    <input type="button" id="hesapla" value="Hesapla">
+        <script>
+            function X1(){
+                var faktöriyel=1;
+                var sayı1=document.getElementById("sayı").value;
+                sayı1=Number(sayı1);
+                if (sayı1>=1){
+                   
+                    for(var i=1;i<=sayı1;i++){
+                             faktöriyel = faktöriyel*i;                       
+                    }
+                        window.alert("Sayının faktöriyeli:"+faktöriyel);
+                }
+                else  window.alert("Doğal sayı girin");
+                }
+                var y1=document.getElementById("hesapla");
+                y1.onclick=X1;
+        </script>
+</body>
+</center>
+
+
+
+
+
+
+
+</html>

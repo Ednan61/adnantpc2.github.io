@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asal sayı bulma</title>
+    <meta charset="Utf-8">
+</head>
+<center>
+<body>
+    <p>Asal sayı olup olmadığını öğrenmek istedğiniz sayıyı girin.</p>
+    <input type="text" id="sayı" placeholder="Bir doğal sayı girin"/><br> 
+    <input type="button" id="anans" value="Hesapla" ><br>
+    <p id="demo"></p>
+    <script text="text/javascrip" language="javascrip">
+        var prime=0;                        
+        var text="";
+        function anan() {
+        prime=document.getElementById("sayı").value;                      
+            var sayac=0;
+            for(i=2 ; i<prime ; i++){ 
+                    if (prime%i==0){
+                        sayac+=1;
+                    }                    
+                }
+                if (sayac==0){
+                    text="Asal sayıdır"
+                }
+                else{
+                    text="Sayı asal sayı değildir";
+                }                    
+                document.getElementById("demo").innerHTML=text;                            
+                }  
+        var y1=document.getElementById("anans"); 
+        y1.onclick=anan()
+    </script>
+
+</body>
+</center>
+</html>

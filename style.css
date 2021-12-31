@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+body{
+    background-image: url(Arkaplan.jpg);
+    font-family: sans-serif;
+}
+.menü-bar{
+    background: #7c9bfa;
+    text-align: center;
+}
+.menü-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menü-bar ul li{
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+}
+.menü-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menü-bar ul li:hover{
+    background: #d4c995;
+    border-radius: 10px;
+}
+.menü-bar .fas{
+    margin-right: 8px;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 675px;
+    top: 300px;
+    font-size: 80px;
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;    
+    position: absolute;
+    top: 375px;
+    left: 775px;
+    font-size: 65px;
+}

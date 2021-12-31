@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sayının pozitif mi negatif mi olduğunu bulma</title>
+    <meta charset="Utf-8">
+    <style>
+
+
+    </style>
+</head>
+<center>
+<body>
+    <p>Bir sayı girin</p>
+    <input type="text" id="sayı"><br>
+    <input type="button" id="hesapla" value="Hesapla">
+    <div id="durumgöster"></div>
+    <script>
+        var sayı1=document.getElementById("sayı");
+        var hesapbtn=document.getElementById("hesapla");
+
+        hesapbtn.onclick=function işlemyap(){
+
+            var sayı2=Number(sayı1.value);
+
+            var anan=document.getElementById("durumgöster");
+
+            if(sayı2<0){
+
+                anan.innerHTML="Sayı negatiftir!!!";
+            }
+            else if(sayı2>0){
+
+                anan.innerHTML="Sayı pozitiftir!!!";
+            }
+            else {
+                
+                anan.innerHTML="Sayı sıfırdır!!!";
+            }
+        }
+    </script>
+</body>
+</center>
+</html>
